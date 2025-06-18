@@ -16,7 +16,7 @@
   "include": [
     "src/**/*",
     "public/**/*"
-  ],
+, "pages"  ],
   "exclude": [
     "node_modules",
     "dist"
