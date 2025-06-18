@@ -1,0 +1,27 @@
+---
+const { sideBarActiveItemID } = Astro.props;
+const activeClass = "selected";
+---
+
+<ul class="menu grow shrink menu-md overflow-y-auto">
+  <li><a class="py-2 text-base" id="home" href="/">Home</a></li>
+  <li><a class="py-2 text-base" id="projects" href="/projects">Projects</a></li>
+  <li><a class="py-2 text-base" id="blog" href="/blog/">Blog</a></li>
+</ul>
+
+<script
+  define:vars={{
+    sideBarActiveItemID: sideBarActiveItemID,
+    activeClass: activeClass,
+  }}
+>
+  const activeItemElem = document.getElementById(sideBarActiveItemID);
+  activeItemElem && activeItemElem.classList.add(activeClass);
+</script>
+
+<style>
+  .selected {
+    color: #aa8b63;
+    font-weight: 700;
+  }
+</style>
