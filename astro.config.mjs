@@ -4,6 +4,12 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://github.com/Kittelsaa/personal-website',
-  integrations: [mdx(), sitemap(), tailwind()]
+  site: 'https://personal-website-lac-gamma.vercel.app', 
+  integrations: [mdx(), sitemap(), tailwind()],
+  output: 'static', 
+  base: '/', 
+  trailingSlash: 'ignore',
+  build: {
+    format: 'directory'
+  }
 });

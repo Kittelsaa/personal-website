@@ -14,7 +14,7 @@ Clone the repository and install the dependencies:
 ```
 git clone [your-repository-url]
 cd [your-repository-folder]
-pnpm install # or npm install / yarn install if you prefer
+npm install / yarn install if you prefer
 ```
 
 ### **Local Development**
