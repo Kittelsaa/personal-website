@@ -1,4 +1,4 @@
-# A Personal Website Template
+# A Personal Website Template ･ﾟ✧
 
 ## Technologies Used
 This website was developed with:
